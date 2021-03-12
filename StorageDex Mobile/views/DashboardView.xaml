@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:forms="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             mc:Ignorable="d"
+             x:Class="StorageDex_Mobile.views.DashboardView">
+    <ContentView.Content>
+        <ScrollView>
+            <StackLayout>
+                <Frame x:Name="titleFrame">
+                    <Grid>
+                        <forms:ChartView x:Name="lineChart"     HorizontalOptions="FillAndExpand" ></forms:ChartView>
+                        <StackLayout x:Name="titleLayout" >
+                            <Label x:Name="title"  FontAttributes="Bold" FontFamily="Arial" Text="Items In Storage" />
+                            <Label x:Name="itemsCount" FontAttributes="Bold" FontFamily="Arial"></Label>
+
+
+                        </StackLayout>
+                        
+                    </Grid>
+
+                </Frame>
+
+                <StackLayout Padding="6" x:Name="contentPanel"></StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentView.Content>
+</ContentView>

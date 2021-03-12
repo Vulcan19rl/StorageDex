@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:elements="clr-namespace:StorageDex_Mobile.elements"
+             mc:Ignorable="d"
+             Title="New Container"
+             x:Class="StorageDex_Mobile.pages.newPages.NewContainerPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="mainLayout" Margin="3">
+                <Grid Margin="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="15" VerticalOptions="Center" HorizontalOptions="Start"  HorizontalTextAlignment="Start" x:Name="containerName">Name</Label>
+                    <elements:BorderlessEntry TextColor="Black" FontSize="15" Grid.Column="1" Text="" BackgroundColor="Transparent" x:Name="nameInput" HorizontalOptions="Fill"></elements:BorderlessEntry>
+                </Grid>
+                <elements:DividerLine></elements:DividerLine>
+                <Grid Margin="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="15" VerticalOptions="Center" HorizontalOptions="Start" HorizontalTextAlignment="Start" x:Name="notes">Notes</Label>
+                </Grid>
+                <elements:BorderlessEditor x:Name="notesEditor" Text="" AutoSize="TextChanges"></elements:BorderlessEditor>
+                <elements:DividerLine></elements:DividerLine>
+                <StackLayout x:Name="tagDisplayWrapper">
+                    <Grid Margin="2" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.8*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Label FontSize="15" VerticalOptions="Center" HorizontalOptions="Start" HorizontalTextAlignment="Start" x:Name="tags">Tags</Label>
+                        <elements:BorderlessEntry TextColor="Black" FontSize="15" Text="" Grid.Column="1" BackgroundColor="Transparent" x:Name="tagsInput" HorizontalOptions="Fill" TextChanged="TagInputOnType" Completed="TagInputCompleted"></elements:BorderlessEntry>
+                    </Grid>
+
+                </StackLayout>
+                <elements:DividerLine></elements:DividerLine>
+                <Frame x:Name="imageHolder" BackgroundColor="Transparent" HorizontalOptions="Start"></Frame>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

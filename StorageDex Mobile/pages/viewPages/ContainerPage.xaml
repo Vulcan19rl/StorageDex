@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:elements="clr-namespace:StorageDex_Mobile.elements"
+             mc:Ignorable="d"
+             x:Class="StorageDex_Mobile.pages.viewPages.ContainerPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="mainLayout">
+            <Frame x:Name="imageFrame" BackgroundColor="Transparent">
+
+            </Frame>
+            <elements:ColoredTableView x:Name="optionsTable" Intent="Menu">
+
+                <TableRoot>
+                    <TableSection>
+                        <elements:ButtonCell x:Name="detailsButton"></elements:ButtonCell>
+                        <elements:ButtonCell x:Name="itemsButton"></elements:ButtonCell>
+                    </TableSection>
+                </TableRoot>
+
+            </elements:ColoredTableView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StorageDex_Mobile.pages.miscPages.ConnectionErrorPage">
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"></RowDefinition>
+            <RowDefinition Height="0.1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackLayout>
+            <Label x:Name="title"  Text="Connection Error"></Label>
+            <Label x:Name="desc"  Text="Unable to connect to server. Try and reconnect?"></Label>
+        </StackLayout>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                <ColumnDefinition Width="0.4*"></ColumnDefinition>
+                <ColumnDefinition Width="0.3*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Text="Reconnect" x:Name="reconnectButton"></Button>
+            <Button Grid.Column="2" Text="Exit" x:Name="exitButton"></Button>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:elements="clr-namespace:StorageDex_Mobile.elements"
+             mc:Ignorable="d"
+             x:Class="StorageDex_Mobile.pages.viewPages.ItemDetailsPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="mainLayout" Padding="10">
+            <Frame x:Name="imageFrame" BackgroundColor="Transparent">
+
+            </Frame>
+            <elements:DividerLine x:Name="notesDiverTop"></elements:DividerLine>
+            <elements:HideableLabel x:Name="notesLabel" Padding="5"></elements:HideableLabel>
+            <elements:DividerLine x:Name="notesDivider"></elements:DividerLine>
+            <elements:TagDisplay Margin="5" x:Name="tagDisplay"></elements:TagDisplay>
+            <elements:DividerLine x:Name="codeDivider"></elements:DividerLine>
+            <elements:HideableLabel x:Name="codeLabel" Padding="5"></elements:HideableLabel>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
